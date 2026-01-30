@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: user-service
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/users/**
+        - id: journal-service
+          uri: lb://JOURNAL-SERVICE
+          predicates:
+            - Path=/journals/**
+
+springdoc:
+  swagger-ui:
+    urls:
+      - name: "User Service API"
+        url: /users/v3/api-docs
+      - name: "Journal Service API"
+        url: /journals/v3/api-docs
