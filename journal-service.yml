@@ -10,4 +10,4 @@ spring:
       ddl-auto: update
 springdoc:
   api-docs:
-    path: /user-docs/v3/api-docs
+    path: /journal-docs/v3/api-docs
