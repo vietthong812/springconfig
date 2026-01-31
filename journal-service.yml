@@ -10,5 +10,4 @@ spring:
       ddl-auto: update
 springdoc:
   api-docs:
-    server:
-      url: http://localhost:8080/journal-service
+    path: /user-docs/v3/api-docs
