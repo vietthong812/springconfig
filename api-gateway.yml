@@ -4,17 +4,6 @@ server:
 spring:
   cloud:
     gateway:
-      globalcors:
-          corsConfigurations:
-            '[/**]':
-              allowedOrigins: "*"
-              allowedMethods:
-                - GET
-                - POST
-                - PUT
-                - DELETE
-                - OPTIONS
-              allowedHeaders: "*"
       routes:
         - id: user-service
           uri: lb://USER-SERVICE
