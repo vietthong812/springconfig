@@ -9,19 +9,15 @@ spring:
           uri: lb://USER-SERVICE
           predicates:
             - Path=/users/**
-          filters:
-            - StripPrefix=1
         - id: journal-service
           uri: lb://JOURNAL-SERVICE
           predicates:
             - Path=/journals/**
-          filters:
-            - StripPrefix=1
 
 springdoc:
   swagger-ui:
     urls:
       - name: "User Service API"
-        url: /users/v3/api-docs
+        url: /v3/api-docs
       - name: "Journal Service API"
-        url: /journals/v3/api-docs
+        url: /v3/api-docs
