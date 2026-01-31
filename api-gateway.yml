@@ -22,6 +22,6 @@ springdoc:
   swagger-ui:
     urls:
       - name: "User Service API"
-        url: /v3/api-docs
+        url: /user-service/v3/api-docs
       - name: "Journal Service API"
-        url: /v3/api-docs
+        url: /journal-service/v3/api-docs
