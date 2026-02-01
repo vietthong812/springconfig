@@ -1,1 +1,13 @@
-
+server:
+ port: 8082
+spring:
+  datasource:
+    url: jdbc:mariadb://mariadb-journal:3306/journal_db
+    username: root
+    password: 123
+  jpa:
+    hibernate:
+      ddl-auto: update
+springdoc:
+  api-docs:
+    path: /journal-docs/v3/api-docs
