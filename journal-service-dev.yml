@@ -5,7 +5,7 @@ eureka:
   instance:
     prefer-ip-address: true
 server:
- port: 8082
+ port: 0
 spring:
   datasource:
     url: jdbc:mariadb://localhost:3307/journal_db
